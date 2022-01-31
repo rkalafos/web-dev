@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# CS4550 - Web Development
+
+---
+Author: Rachel Kalafos \
+Github: https://github.com/rkalafos/web-dev \
+Site: https://determined-bardeen-4f709e.netlify.app/
+---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
