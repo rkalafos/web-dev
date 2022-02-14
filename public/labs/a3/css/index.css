@@ -115,6 +115,9 @@ p#id-selector-2 {
 .pos-relative {
     position: relative;
 }
+.min-height-150 {
+    height: 150px;
+}
 .pos-absolute-10-10 {
     position: absolute;
     top: 10px;
