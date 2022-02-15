@@ -1,0 +1,80 @@
+html {
+    background-color: black;
+    margin-left: 16px;
+}
+.search-bar {
+    color: white;
+    background-color: rgb(47, 51, 54);
+    border-radius: 50px;
+    border-color: rgb(47, 51, 54);
+    padding: 10px;
+    width: 85%;
+    margin-bottom: 50px;
+}
+.nav-container {
+    height: 35px;
+}
+.gear {
+    float: right;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+.gear-icon {
+    width: 20px;
+    height: 20px;
+    color: rgb(29, 161, 242);
+}
+.grid-row {
+    align-items: baseline;
+    clear: both;
+}
+.explore-nav-tab {
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+    padding: 16px;
+    margin: 16px;
+}
+.highlighted-nav-tab {
+    color: rgb(29, 161, 242);
+    border-bottom: 3px solid rgb(29, 161, 242);
+}
+.suggested-post {
+    position: relative;
+    border: 1px solid rgb(47, 51, 54);
+    padding: 10px;
+    height: 100px;
+}
+.trending {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+    margin: 3px;
+}
+.title {
+    color: white;
+    margin: 3px;
+}
+.num-tweets {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+    margin: 3px;
+}
+.top-right-dots {
+    position: absolute;
+    right: 10px;
+    top: -10px;
+    color: white;
+}
+.avatar {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+.image-preview {
+    float: right;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    position: absolute;
+    right: 16px;
+    top: 10px;
+}
