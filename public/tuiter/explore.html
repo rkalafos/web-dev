@@ -2,9 +2,298 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Explore</title>
+    <link href="style-sheets/explore.css" rel="stylesheet"/>
+    <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
 </head>
 <body>
 
+<div class="container mt-2">
+    <!-- Uncomment for a screen size showing!
+    <div class="row">
+        <div class="d-block d-sm-none fa-2x">XS</div>
+        <div class="d-none d-sm-block d-md-none fa-2x">S</div>
+        <div class="d-none d-md-block d-lg-none fa-2x">M</div>
+        <div class="d-none d-lg-block d-xl-none fa-2x">L</div>
+        <div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
+        <div class="d-none d-xxl-block fa-2x">XXL</div>
+    </div>
+    -->
+
+    <div class="row">
+        <!-- THE NAVIGATION COLUMN -->
+        <div class="col-2 col-lg-1 col-xl-2">
+            <div class="list-group mb-2">
+                <div class="list-group-item list-group-item-action">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <a href="home.html" class="list-group-item list-group-item-action">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <span class="d-none d-xl-inline-block">Home</span>
+                </a>
+                <a href="explore.html" class="list-group-item list-group-item-action active">
+                    <i class="fa-solid fa-hashtag"></i>
+                    <span class="d-none d-xl-inline-block">Explore</span>
+                </a>
+                <a href="notifications.html" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-bell"></i>
+                    <span class="d-none d-xl-inline-block">Notifications</span>
+                </a>
+                <a href="messages.html" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="d-none d-xl-inline-block">Messages</span>
+                </a>
+                <a href="bookmarks.html" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-bookmark"></i>
+                    <span class="d-none d-xl-inline-block">Bookmarks</span>
+                </a>
+                <a href="lists.html" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-list"></i>
+                    <span class="d-none d-xl-inline-block">Lists</span>
+                </a>
+                <a href="profile.html" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="d-none d-xl-inline-block">Profile</span>
+                </a>
+                <a href="#" class="ps-0 pe-0 list-group-item list-group-item-action">
+                    <span class="p-0 fa-stack fa-1x">
+                        <i class="fas fa-circle fa-stack-1x"></i>
+                        <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <span class="d-none d-xl-inline-block">More</span>
+                </a>
+            </div>
+            <a href="tuit.html" class="btn btn-primary col-12 rounded-pill">Tweet</a>
+        </div>
+        <!-- THE CENTER TWEETS COLUMN -->
+        <div class="col-sm-10 col-md-10 col-lg-7 col-xl-6 p-0">
+            <!-- SEARCH BAR! -->
+            <div class="row m-2">
+                <div class="col-11 border rounded-pill">
+                    <div class="input-group input-group-sm">
+                        <div class="input-group-text bg-transparent border-0">
+                            <i class="fa-solid fa-search"></i>
+                        </div>
+                        <input
+                                type="text"
+                                class="form-control form-control-sm py-2 border-0"
+                                placeholder="Search Twitter"
+                        />
+                    </div>
+                </div>
+                <div class="col-1 d-flex justify-content-center">
+                    <a class="d-flex align-items-center text-decoration-none" href="explore-settings.html">
+                        <i class="fa-solid fa-gear"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Tabs Sections -->
+            <div class="row m-2">
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">For You</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sports</a>
+                    </li>
+                    <li class="nav-item d-none d-md-block">
+                        <a class="nav-link" href="#">Entertainment</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row m-2 mb-0">
+                <div class="card p-0">
+                    <img class="card-img" src="../images/starship.jpeg" alt="starship"/>
+                    <div class="p-1 m-0 card-img-overlay h-100 d-flex flex-column justify-content-end">
+                        <h2 class="card-title text-white">SpaceX's Starship</h2>
+                    </div>
+                </div>
+                <div class="card p-2">
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="card-subtitle" style="color: gray">Web Development</div>
+                            <div class="card-text">
+                                <b>ReactJS</b>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span style="color: gray"> - 2h</span>
+                            </div>
+                            <div class="card-text">
+                                <b>
+                                    React.js is a component based front end library that makes it very easy to build
+                                    Single Page Applications or SPAs
+                                </b>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <img src="../images/react.png" alt="react logo" class="img-fluid rounded-3">
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-2">
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="card-text">
+                                <b>JavaScript</b>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span style="color: gray"> - 2h</span>
+                            </div>
+                            <div class="card-text">
+                                <b>
+                                    JavaScript is programming language that can run on browsers as well as desktops
+                                </b>
+                            </div>
+                            <div style="color: gray">123K Tweets</div>
+                        </div>
+                        <div class="col-3">
+                            <img src="../images/js_logo.png" alt="js logo" class="img-fluid rounded-3">
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-2">
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="card-subtitle" style="color: gray">Web Development</div>
+                            <div class="card-text">
+                                <b>jQuery</b>
+                            </div>
+                            <div style="color: gray">123K Tweets</div>
+                        </div>
+                        <div class="col-3">
+                            <img src="../images/jquery_logo.png" alt="jquery logo" class="img-fluid fa-square rounded">
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-2">
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="card-subtitle" style="color: gray">Web Development</div>
+                            <div class="card-text">
+                                <b>NodeJS</b>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span style="color: gray"> - 2h</span>
+                            </div>
+                            <div style="color: gray">123K Tweets</div>
+                        </div>
+                        <div class="col-3">
+                            <img src="../images/node_js.jpeg" alt="node logo" class="img-fluid fa-square rounded-2">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Who to follow -->
+        <div class="d-sm-none d-md-none d-lg-block col-lg-4">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    Who to follow
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="../images/java.jpeg" class="img-fluid rounded-circle fa-pull-left" alt="java logo" />
+                        </div>
+                        <div class="col-7 position-relative zindex-bring-to-front ps-0">
+                            <div class="d-flex align-items-center">
+                                <b class="flex-nowrap pe-1">Java</b>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div>
+                                @Java
+                            </div>
+                        </div>
+                        <div class="col-2 align-self-center">
+                            <button class="btn btn-primary rounded-pill fa-pull-right">Follow</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="../images/relativity_space.jpeg" class="img-fluid rounded-circle fa-pull-left" alt="rel space logo"/>
+                        </div>
+                        <div class="col-7 position-relative zindex-bring-to-front ps-0">
+                            <div class="d-flex align-items-center">
+                                <b class="flex-nowrap pe-1">Relativity Space</b>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div>
+                                @relativityspace
+                            </div>
+                        </div>
+                        <div class="col-2 align-self-center">
+                            <button class="btn btn-primary rounded-pill fa-pull-right">Follow</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="../images/virgin_galactic.svg" class="img-fluid rounded-circle fa-pull-left"  alt="virgin galactic logo"/>
+                        </div>
+                        <div class="col-7 position-relative zindex-bring-to-front ps-0">
+                            <div class="d-flex align-items-center">
+                                <b class="flex-nowrap pe-1">Virgin Galactic</b>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div>
+                                @virgingalactic
+                            </div>
+                        </div>
+                        <div class="col-2 align-self-center">
+                            <button class="btn btn-primary rounded-pill fa-pull-right">Follow</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="../images/nasa.png" class="img-fluid rounded-circle fa-pull-left" alt="nasa logo"/>
+                        </div>
+                        <div class="col-7 position-relative zindex-bring-to-front ps-0">
+                            <div class="d-flex align-items-center">
+                                <b class="flex-nowrap pe-1">NASA</b>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div>
+                                @NASA
+                            </div>
+                        </div>
+                        <div class="col-2 align-self-center">
+                            <button class="btn btn-primary rounded-pill fa-pull-right">Follow</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="../images/tesla.jpeg" class="img-fluid rounded-circle fa-pull-left" alt="tesla logo"/>
+                        </div>
+                        <div class="col-7 position-relative zindex-bring-to-front ps-0">
+                            <div class="d-flex align-items-center">
+                                <b class="flex-nowrap pe-1">Tesla</b>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div>
+                                @Tesla
+                            </div>
+                        </div>
+                        <div class="col-2 align-self-center">
+                            <button class="btn btn-primary rounded-pill fa-pull-right">Follow</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
 </body>
 </html>
