@@ -10,7 +10,7 @@
 <body>
 
 <div class="container mt-2">
-    <!-- Uncomment for a screen size showing! -->
+    <!-- Uncomment for a screen size showing!
     <div class="row">
         <div class="d-block d-sm-none fa-2x">XS</div>
         <div class="d-none d-sm-block d-md-none fa-2x">S</div>
@@ -19,6 +19,7 @@
         <div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
         <div class="d-none d-xxl-block fa-2x">XXL</div>
     </div>
+    -->
 
     <div class="row">
         <!-- THE NAVIGATION COLUMN -->
@@ -66,17 +67,17 @@
             <a href="tuit.html" class="btn btn-primary col-12 rounded-pill">Tweet</a>
         </div>
         <!-- THE CENTER TWEETS COLUMN -->
-        <div class="col-sm-10 col-md-10 col-lg-8 col-xl-6 p-0">
+        <div class="col-sm-10 col-md-10 col-lg-7 col-xl-6 p-0">
             <!-- SEARCH BAR! -->
             <div class="row m-2">
-                <div class="col-11">
+                <div class="col-11 border rounded-pill">
                     <div class="input-group input-group-sm">
-                        <div class="input-group-text bg-transparent rounded-start">
+                        <div class="input-group-text bg-transparent border-0">
                             <i class="fa-solid fa-search"></i>
                         </div>
                         <input
                                 type="text"
-                                class="form-control form-control-sm py-2 border-start-0 rounded-end"
+                                class="form-control form-control-sm py-2 border-0"
                                 placeholder="Search Twitter"
                         />
                     </div>
@@ -102,7 +103,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Sports</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-none d-md-block">
                         <a class="nav-link" href="#">Entertainment</a>
                     </li>
                 </ul>
@@ -190,7 +191,7 @@
 
         </div>
         <!-- Who to follow -->
-        <div class="d-sm-none d-md-none d-lg-block col-lg-3 col-xl-4">
+        <div class="d-sm-none d-md-none d-lg-block col-lg-4">
             <ul class="list-group">
                 <li class="list-group-item">
                     Who to follow
@@ -198,15 +199,18 @@
                 <li class="list-group-item">
                     <div class="row">
                         <div class="col-3">
-                            <img src="../images/java.jpeg" class="img-fluid rounded-circle fa-pull-left" />
+                            <img src="../images/java.jpeg" class="img-fluid rounded-circle fa-pull-left" alt="java logo" />
                         </div>
-                        <div class="col-6">
-                            <b>Java</b>
-                            <i class="fa-solid fa-circle-check"></i>
-                            <br>
-                            @Java
+                        <div class="col-7 position-relative zindex-bring-to-front ps-0">
+                            <div class="d-flex align-items-center">
+                                <b class="flex-nowrap pe-1">Java</b>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div>
+                                @Java
+                            </div>
                         </div>
-                        <div class="col-3 align-self-center">
+                        <div class="col-2 align-self-center">
                             <button class="btn btn-primary rounded-pill fa-pull-right">Follow</button>
                         </div>
                     </div>
@@ -214,15 +218,18 @@
                 <li class="list-group-item">
                     <div class="row">
                         <div class="col-3">
-                            <img src="../images/relativity_space.jpeg" class="img-fluid rounded-circle fa-pull-left" />
+                            <img src="../images/relativity_space.jpeg" class="img-fluid rounded-circle fa-pull-left" alt="rel space logo"/>
                         </div>
-                        <div class="col-6">
-                            <b>Relativity Space</b>
-                            <i class="fa-solid fa-circle-check"></i>
-                            <br>
-                            @relativityspace
+                        <div class="col-7 position-relative zindex-bring-to-front ps-0">
+                            <div class="d-flex align-items-center">
+                                <b class="flex-nowrap pe-1">Relativity Space</b>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div>
+                                @relativityspace
+                            </div>
                         </div>
-                        <div class="col-3 align-self-center">
+                        <div class="col-2 align-self-center">
                             <button class="btn btn-primary rounded-pill fa-pull-right">Follow</button>
                         </div>
                     </div>
@@ -230,15 +237,18 @@
                 <li class="list-group-item">
                     <div class="row">
                         <div class="col-3">
-                            <img src="../images/virgin_galactic.svg" class="img-fluid rounded-circle fa-pull-left" />
+                            <img src="../images/virgin_galactic.svg" class="img-fluid rounded-circle fa-pull-left"  alt="virgin galactic logo"/>
                         </div>
-                        <div class="col-6">
-                            <b>Virgin Galactic</b>
-                            <i class="fa-solid fa-circle-check"></i>
-                            <br>
-                            @virgingalactic
+                        <div class="col-7 position-relative zindex-bring-to-front ps-0">
+                            <div class="d-flex align-items-center">
+                                <b class="flex-nowrap pe-1">Virgin Galactic</b>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div>
+                                @virgingalactic
+                            </div>
                         </div>
-                        <div class="col-3 align-self-center">
+                        <div class="col-2 align-self-center">
                             <button class="btn btn-primary rounded-pill fa-pull-right">Follow</button>
                         </div>
                     </div>
@@ -246,15 +256,18 @@
                 <li class="list-group-item">
                     <div class="row">
                         <div class="col-3">
-                            <img src="../images/nasa.png" class="img-fluid rounded-circle fa-pull-left" />
+                            <img src="../images/nasa.png" class="img-fluid rounded-circle fa-pull-left" alt="nasa logo"/>
                         </div>
-                        <div class="col-6">
-                            <b>NASA</b>
-                            <i class="fa-solid fa-circle-check"></i>
-                            <br>
-                            @NASA
+                        <div class="col-7 position-relative zindex-bring-to-front ps-0">
+                            <div class="d-flex align-items-center">
+                                <b class="flex-nowrap pe-1">NASA</b>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div>
+                                @NASA
+                            </div>
                         </div>
-                        <div class="col-3 align-self-center">
+                        <div class="col-2 align-self-center">
                             <button class="btn btn-primary rounded-pill fa-pull-right">Follow</button>
                         </div>
                     </div>
@@ -262,15 +275,18 @@
                 <li class="list-group-item">
                     <div class="row">
                         <div class="col-3">
-                            <img src="../images/tesla.jpeg" class="img-fluid rounded-circle fa-pull-left" />
+                            <img src="../images/tesla.jpeg" class="img-fluid rounded-circle fa-pull-left" alt="tesla logo"/>
                         </div>
-                        <div class="col-6">
-                            <b>Tesla</b>
-                            <i class="fa-solid fa-circle-check"></i>
-                            <br>
-                            @Tesla
+                        <div class="col-7 position-relative zindex-bring-to-front ps-0">
+                            <div class="d-flex align-items-center">
+                                <b class="flex-nowrap pe-1">Tesla</b>
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div>
+                                @Tesla
+                            </div>
                         </div>
-                        <div class="col-3 align-self-center">
+                        <div class="col-2 align-self-center">
                             <button class="btn btn-primary rounded-pill fa-pull-right">Follow</button>
                         </div>
                     </div>
