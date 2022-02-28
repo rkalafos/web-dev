@@ -1,5 +1,4 @@
-let exploreItems;
-export default exploreItems = [
+let exploreItems = [
     {
         topic: 'Web Development',
         userName: 'ReactJS',
@@ -33,3 +32,4 @@ export default exploreItems = [
         tweets: '120K',
     },
 ];
+export default exploreItems;

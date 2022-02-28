@@ -1,4 +1,4 @@
-import PostSummaryList from "./PostSummaryList";
+import PostSummaryList from "./PostSummaryList/index.js";
 
 const ExploreComponent = () => {
     return(`
@@ -38,7 +38,7 @@ const ExploreComponent = () => {
                     <a class="nav-link" href="#">Entertainment</a>
                 </li>
             </ul>
-            <div class="card p-0">
+            <div class="card p-0 mb-2">
                 <img class="card-img" src="../../images/starship.jpeg" alt="starship"/>
                 <div class="p-1 m-0 card-img-overlay h-100 d-flex flex-column justify-content-end">
                     <h2 class="card-title text-white">SpaceX's Starship</h2>

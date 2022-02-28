@@ -13,12 +13,12 @@ const PostSummaryItem = (post) => {
             <div class="row">
                 <div class="col-9">
                     <div class="card-subtitle" style="color: gray">${post.topic}</div>
-                    <div class="card-text">
+                    <div class="card-text" style="color: white">
                         <b>${post.userName}</b>
                         <i class="fa-solid fa-circle-check"></i>
                         <span style="color: gray"> - ${post.time}</span>
                     </div>
-                    <div class="card-text">
+                    <div class="card-text" style="color: white">
                         <b>${post.title}</b>
                     </div>
                 </div>
