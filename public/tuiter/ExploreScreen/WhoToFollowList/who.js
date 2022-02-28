@@ -1,4 +1,5 @@
-export default [
+let whoTo;
+export default whoTo = [
     {   avatarIcon: '../../images/java.jpeg',
         userName: 'Java',
         handle: 'Java',
