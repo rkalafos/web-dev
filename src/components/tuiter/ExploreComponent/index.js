@@ -19,25 +19,25 @@ const ExploreComponent = () => {
                 </div>
                 <div className="col-1 d-flex justify-content-center">
                     <a className="d-flex align-items-center text-decoration-none" href="explore-settings.html">
-                        <i className="fa-solid fa-gear"/>
+                        <i className="fa-solid fa-gear fa-2x fa-pull-right"/>
                     </a>
                 </div>
             </div>
             <ul className="nav mb-2 nav-tabs">
-                <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="#">For You</a>
+                <li className="nav-item" key={"for-you"}>
+                    <a className="nav-link active" aria-current="page" href="/">For You</a>
                 </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#">Trending</a>
+                <li className="nav-item" key={"trending"}>
+                    <a className="nav-link" href="/">Trending</a>
                 </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#">News</a>
+                <li className="nav-item" key={"news"}>
+                    <a className="nav-link" href="/">News</a>
                 </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#">Sports</a>
+                <li className="nav-item" key={"sports"}>
+                    <a className="nav-link" href="/">Sports</a>
                 </li>
-                <li className="nav-item d-none d-md-block">
-                    <a className="nav-link" href="#">Entertainment</a>
+                <li className="nav-item d-none d-md-block" key={"entertainment"}>
+                    <a className="nav-link" href="/">Entertainment</a>
                 </li>
             </ul>
             <div className="card p-0 mb-2">

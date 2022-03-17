@@ -1,14 +1,15 @@
 import React from "react";
 
 const PostSummaryItem = ({post = {
-            "topic": "Web Development",
-            "userName": "ReactJS",
-            "time": "2h",
-            "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
-            "image": "../../images/react.png"
+    "id": "1",
+    "topic": "Web Development",
+    "userName": "ReactJS",
+    "time": "2h",
+    "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
+    "image": "../../images/react.png"
 }}) => {
     return(
-        <div className="card p-2">
+        <li className="card p-2" key={post.id}>
             <div className="row">
                 <div className="col-9">
                     <div className="card-subtitle" style={{color: "gray"}}>{post.topic}</div>
@@ -22,10 +23,10 @@ const PostSummaryItem = ({post = {
                     </div>
                 </div>
                <div className="col-3">
-                    <img src={post.image} className="img-fluid rounded-3"/>
+                    <img src={post.image} className="img-fluid rounded-3" alt={post.title}/>
                </div>
             </div>
-        </div>
+        </li>
     );
 };
 export default PostSummaryItem;
