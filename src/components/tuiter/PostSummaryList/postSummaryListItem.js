@@ -13,8 +13,8 @@ const PostSummaryItem = ({post = {
                 <div className="col-9">
                     <div className="card-subtitle" style={{color: "gray"}}>{post.topic}</div>
                     <div className="card-text">
-                        <b>{post.userName}</b>
-                        <i className="fa-solid fa-circle-check"/>
+                        <b style={{color: "white"}}>{post.userName}</b>
+                        <i className="fa-solid fa-circle-check ps-1" style={{color: "white"}}/>
                         <span style={{color: "gray"}}> - {post.time}</span>
                     </div>
                     <div className="card-text" style={{color: "white"}}>

@@ -1,5 +1,6 @@
 import "./vendors/bootstrap/css/bootstrap.min.css";
-import "./vendors/fontawesome/css/all.min.css";
+import "./vendors/bootstrap/cyborg/bootstrap.min.css";
+import "./vendors/fontawesome/css/all.css";
 
 import HelloWorld from "./components/hello-world";
 import Labs from "./components/labs";
