@@ -7,7 +7,7 @@ const WhoToFollowListItem = ({who = {
     handle: 'NASA'
 }}) => {
     return(
-        <li className="list-group-item" key={who.id}>
+        <li className="list-group-item">
             <div className="row">
                     <div className="col-3">
                         <img src={who.avatarIcon} width="48" className="rounded-circle float-start" alt={who.userName}/>

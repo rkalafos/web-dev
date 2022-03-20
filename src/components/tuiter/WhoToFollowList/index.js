@@ -9,7 +9,7 @@ const WhoToFollowList = () => {
             {
                 who.map(person => {
                     return (
-                        <WhoToFollowListItem who={person}/>
+                        <WhoToFollowListItem who={person} key={person.id}/>
                     );
                 })
             }

@@ -9,7 +9,7 @@ const PostSummaryItem = ({post = {
     "image": "../../images/react.png"
 }}) => {
     return(
-        <li className="card p-2" key={post.id}>
+        <li className="card p-2">
             <div className="row">
                 <div className="col-9">
                     <div className="card-subtitle" style={{color: "gray"}}>{post.topic}</div>
