@@ -9,12 +9,14 @@ const NavigationSidebar = ({active = 'explore'}) => {
                     <i className="fab fa-twitter"/>
                 </a>
                 <a
+                    href={"/tuiter"}
                     className={`list-group-item ${active === 'home' ? 'active' : ''}`}
                 >
                     <i className="fa-solid fa-house-chimney pe-1"/>
                     <span className="d-none d-xl-inline-block">Home</span>
                 </a>
                 <a
+                    href={"/tuiter"}
                     className={`list-group-item ${active === 'explore' ? 'active' : ''}`}
                 >
                     <i className="fa-solid fa-hashtag pe-1"/>
@@ -35,7 +37,7 @@ const NavigationSidebar = ({active = 'explore'}) => {
                     <span className="d-none d-xl-inline-block">Messages</span>
                 </a>
                 <a
-                    href="../../../../public/tuiter/bookmarks.html"
+                    href={"/tuiter"}
                     className={`list-group-item ${active === 'bookmarks' ? 'active' : ''}`}
                 >
                     <i className="fa-solid fa-bookmark pe-1"/>
@@ -55,7 +57,10 @@ const NavigationSidebar = ({active = 'explore'}) => {
                     <i className="fa-solid fa-user pe-1"/>
                     <span className="d-none d-xl-inline-block">Profile</span>
                 </a>
-                <a href="#" className="ps-0 pe-0 list-group-item list-group-item-action">
+                <a
+                    href={"/tuiter"}
+                    className="ps-0 pe-0 list-group-item list-group-item-action"
+                >
                     <span className="p-0 fa-stack fa-1x">
                         <i className="fas fa-circle fa-stack-1x"/>
                         <i className="fas fa-ellipsis-h fa-stack-1x fa-inverse"/>
