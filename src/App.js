@@ -5,20 +5,28 @@ import "./vendors/fontawesome/css/all.min.css";
 import HelloWorld from "./components/hello-world";
 import Labs from "./components/labs";
 import Tuiter from "./components/tuiter";
-import { BrowserRouter, Route, Routes} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ExploreComponent from "./components/tuiter/ExploreComponent";
+import HomeScreen from "./components/tuiter/HomeScreen";
 
 
 function App() {
     return (
-        <div className="container">
             <BrowserRouter>
-                <Routes>
-                    <Route path="/hello" exact={true} element={<HelloWorld/>}/>
-                    <Route path="/" exact={true} element={<Labs/>}/>
-                    <Route path="/tuiter" exact={true} element={<Tuiter/>}/>
-                </Routes>
+                <div className="container">
+                    <Routes>
+                        <Route path="/">
+                            <Route path="labs" element={<Labs/>} />
+                            <Route path="hello" element={<HelloWorld/>} />
+                            <Route path="tuiter" element={<Tuiter/>} >
+                                <Route index element={<HomeScreen />} />
+                                <Route path="explore" element={<ExploreComponent />} />
+                                <Route path="notifications" element={<h1>Notifications Screen</h1>} />
+                            </Route>
+                        </Route>
+                    </Routes>
+                </div>
             </BrowserRouter>
-        </div>
     );
 }
 
