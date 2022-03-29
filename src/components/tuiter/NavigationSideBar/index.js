@@ -1,64 +1,65 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 
 const NavigationSidebar = ({active = 'explore'}) => {
     return(
         <>
             <div className="list-group">
-                <a className="list-group-item" href="/">
+                <div className="list-group-item">
                     <i className="fab fa-twitter"/>
-                </a>
-                <a
-                    href={"/tuiter"}
+                </div>
+                <Link
+                    to={"/tuiter"}
                     className={`list-group-item ${active === 'home' ? 'active' : ''}`}
                 >
                     <i className="fa-solid fa-house-chimney pe-1"/>
                     <span className="d-none d-xl-inline-block">Home</span>
-                </a>
-                <a
-                    href={"/tuiter"}
+                </Link>
+                <Link
+                    href={"/tuiter/explore"}
                     className={`list-group-item ${active === 'explore' ? 'active' : ''}`}
                 >
                     <i className="fa-solid fa-hashtag pe-1"/>
                     <span className="d-none d-xl-inline-block">Explore</span>
-                </a>
-                <a
-                    href="../../../../public/tuiter/notifications.html"
+                </Link>
+                <Link
+                    to="/tuiter"
                     className={`list-group-item ${active === 'notifications' ? 'active' : ''}`}
                 >
                     <i className="fa-solid fa-bell pe-1"/>
                     <span className="d-none d-xl-inline-block">Notifications</span>
-                </a>
-                <a
-                    href="../../../../public/tuiter/messages.html"
+                </Link>
+                <Link
+                    to="/tuiter"
                     className={`list-group-item ${active === 'messages' ? 'active' : ''}`}
                 >
                     <i className="fa-solid fa-envelope pe-1"/>
                     <span className="d-none d-xl-inline-block">Messages</span>
-                </a>
-                <a
-                    href={"/tuiter"}
+                </Link>
+                <Link
+                    to="/tuiter"
                     className={`list-group-item ${active === 'bookmarks' ? 'active' : ''}`}
                 >
                     <i className="fa-solid fa-bookmark pe-1"/>
                     <span className="d-none d-xl-inline-block">Bookmarks</span>
-                </a>
-                <a
-                    href="../../../../public/tuiter/lists.html"
+                </Link>
+                <Link
+                    to="/tuiter"
                     className={`list-group-item ${active === 'lists' ? 'active' : ''}`}
                 >
                     <i className="fa-solid fa-list pe-1"/>
                     <span className="d-none d-xl-inline-block">Lists</span>
-                </a>
-                <a
-                    href="../../../../public/tuiter/profile.html"
+                </Link>
+                <Link
+                    to="/tuiter"
                     className={`list-group-item ${active === 'profile' ? 'active' : ''}`}
                 >
                     <i className="fa-solid fa-user pe-1"/>
                     <span className="d-none d-xl-inline-block">Profile</span>
-                </a>
-                <a
-                    href={"/tuiter"}
+                </Link>
+                <Link
+                    to="/tuiter"
                     className="ps-0 pe-0 list-group-item list-group-item-action"
                 >
                     <span className="p-0 fa-stack fa-1x">
@@ -66,14 +67,13 @@ const NavigationSidebar = ({active = 'explore'}) => {
                         <i className="fas fa-ellipsis-h fa-stack-1x fa-inverse"/>
                     </span>
                     <span className="d-none d-xl-inline-block">More</span>
-                </a>
+                </Link>
             </div>
             <div className="d-grid mt-2">
-                <a href="../../../../public/tuiter/tuit.html"
-                   className="btn btn-primary btn-block rounded-pill"
+                <button className="btn btn-primary btn-block rounded-pill"
                 >
                     Tweet
-                </a>
+                </button>
             </div>
         </>
     );

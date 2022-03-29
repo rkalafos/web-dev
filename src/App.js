@@ -19,7 +19,7 @@ function App() {
                             <Route path="labs" element={<Labs/>} />
                             <Route path="hello" element={<HelloWorld/>} />
                             <Route path="tuiter" element={<Tuiter/>} >
-                                <Route path="" element={<HomeScreen />} />
+                                <Route index element={<HomeScreen />} />
                                 <Route path="explore" element={<ExploreComponent />} />
                                 <Route path="notifications" element={<h1>Notifications Screen</h1>} />
                             </Route>
