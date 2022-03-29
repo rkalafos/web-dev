@@ -17,7 +17,7 @@ const NavigationSidebar = ({active = 'explore'}) => {
                     <span className="d-none d-xl-inline-block">Home</span>
                 </Link>
                 <Link
-                    href={"/tuiter/explore"}
+                    to={"/tuiter/explore"}
                     className={`list-group-item ${active === 'explore' ? 'active' : ''}`}
                 >
                     <i className="fa-solid fa-hashtag pe-1"/>
