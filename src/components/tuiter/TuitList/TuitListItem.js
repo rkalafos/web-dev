@@ -3,7 +3,7 @@ import {useDispatch} from "react-redux";
 import TuitStats from "../TuitStats";
 
 
-const TuitListItem = ({key = "123", tuit =   {
+const TuitListItem = ({tuit =   {
     "_id": "123",
     "topic": "Web Development",
     "postedBy": {
