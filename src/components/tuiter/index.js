@@ -1,9 +1,9 @@
 import {Outlet, useLocation} from "react-router-dom";
 import NavigationSidebar from "./NavigationSideBar";
-import whoReducer from "./reducers/who-reducer";
+import whoReducer from "../../reducers/who-reducer";
 import {Provider} from "react-redux";
 import WhoToFollowList from "./WhoToFollowList";
-import tuitsReducer from "./reducers/tuits-reducer";
+import tuitsReducer from "../../reducers/tuits-reducer";
 import {combineReducers, createStore} from "redux";
 const reducer = combineReducers({
     tuits: tuitsReducer, who: whoReducer
